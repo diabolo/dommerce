@@ -1,4 +1,5 @@
 R31187::Application.routes.draw do
+  resource :registration, :only => [:new]
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
