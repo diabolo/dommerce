@@ -36,6 +36,7 @@ group :development, :test do
   gem "cucumber-rails"
   gem 'database_cleaner'
   gem 'unicorn'
+  gem 'coderay'
   platform :ruby_18 do
     gem "ruby-debug"
   end
