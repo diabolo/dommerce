@@ -1,5 +1,7 @@
 R31187::Application.routes.draw do
   resources :products, :only => [:show]
+  root :to => "welcome#index"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
