@@ -19,6 +19,7 @@ end
 
 gem 'jquery-rails'
 gem 'haml-rails'
+gem 'activeadmin', '~> 0.3.4'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -37,6 +38,7 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'unicorn'
   gem 'coderay'
+  gem 'fabrication'
   platform :ruby_18 do
     gem "ruby-debug"
   end

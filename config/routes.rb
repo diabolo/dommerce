@@ -1,6 +1,10 @@
 R31187::Application.routes.draw do
+  root :to => 'welcome#index'
+  ActiveAdmin.routes(self)
+
+  devise_for :admin_users, ActiveAdmin::Devise.config
+
   resources :products, :only => [:show]
-  root :to => "welcome#index"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
